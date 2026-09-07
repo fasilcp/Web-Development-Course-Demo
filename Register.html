@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Register for the Fest</title>
+	</head>
+
+	<body>
+		<header>
+			<img
+				src="https://www.iimb.ac.in/sites/default/files/inline-images/IIMB-Logo.png"
+				alt="IIMB Logo"
+				width="300"
+				height="100"
+			/>
+			<h1>Welcome to the College Fest!</h1>
+			<p>
+				Join us for an unforgettable experience filled with fun,
+				learning, and networking opportunities. Here are some important
+				details:
+			</p>
+
+			<a href="./index.html">Click here to go back to the home page</a>
+		</header>
+
+		<main>
+			<section>
+				<h2>Register for the Fest</h2>
+				<form action="/submit_registration">
+					<label for="name">Name:</label>
+					<input
+						type="text"
+						id="name"
+						name="name"
+						required
+						minlength="2"
+						maxlength="100"
+					/><br /><br />
+
+					<label for="email">Email:</label>
+					<input
+						type="email"
+						id="email"
+						name="email"
+						required
+					/><br /><br />
+
+					<label for="age">Age:</label>
+					<input
+						type="number"
+						id="age"
+						name="age"
+						min="1"
+						required
+					/><br /><br />
+
+					<label for="color">Pick your favorite color:</label>
+					<input type="color" id="color" name="color" /><br /><br />
+
+					<select name="t-shirt-size" id="t-shirt-size" required>
+						<option value="">Please select a size</option>
+						<option value="small">Small</option>
+						<option value="medium">Medium</option>
+						<option value="large">Large</option>
+						<option value="extra-large">Extra Large</option></select
+					><br /><br />
+
+					<input type="checkbox" id="terms" name="terms" required />
+					<label for="terms"
+						>I agree to the terms and conditions</label
+					>
+					<br /><br />
+
+					<input
+						type="radio"
+						name="attendee-type"
+						value="Student"
+						id="student"
+						required
+					/>
+					<label for="student">Student</label>
+					<input
+						type="radio"
+						name="attendee-type"
+						value="Alumni"
+						id="alumni"
+					/>
+					<label for="alumni">Alumni</label>
+					<input
+						type="radio"
+						name="attendee-type"
+						value="Guest"
+						id="guest"
+					/>
+					<label for="guest">Guest</label>
+					<br /><br />
+
+					<button type="submit">Submit Registration</button>
+				</form>
+			</section>
+		</main>
+	</body>
+</html>
